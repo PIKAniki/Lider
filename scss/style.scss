@@ -484,8 +484,9 @@
                     background: #ffa650;
                     border-radius: 20px;
                     padding: 20px 0;
-                    display: none;
-                    transition: all .5s;
+                    // display: none;
+                    opacity: 0;
+                    transition: all .6s;
                     z-index: 5;
                     &__title {
                         font-size: 20px;
@@ -530,7 +531,8 @@
                     }
                 }
                 &__item:hover .catalog__product-opacity {
-                    display: block;
+                    // display: block;
+                    opacity: 1;
                 }
                 &__product-opacity__button {
                     position: absolute;
