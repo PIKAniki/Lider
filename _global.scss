@@ -1,0 +1,104 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+}
+
+body {
+    min-width: 320px;
+    max-width: 1920px;
+    overflow-x: hidden;
+    position: relative;
+    font-size: 17px;
+    line-height: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0 auto;
+    touch-action: manipulation;
+    &.no-scroll {
+        overflow-y: hidden;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.phone {
+    position: relative;
+    padding-left: 22px;
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url('../images/phone-call.svg');
+        width: 20px;
+        height: 20px;
+        top: 3px;
+        left: -1px;
+    }
+}
+
+.email {
+    position: relative;
+    padding-left: 22px;
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url('../images/email.svg');
+        width: 20px;
+        height: 20px;
+        top: 3px;
+        left: -2px;
+    }
+}
