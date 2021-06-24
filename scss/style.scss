@@ -660,19 +660,21 @@
                     color: #000;
                 }
                 &__item {
-                    margin: 0 15px;
-                }
-                .slick-slide {
-                    opacity: .5;
-                    transition: opacity 1s;
-                }
-                .slick-center {
-                    opacity: 1;
+                    margin: 0;
                 }
             }
             
-            .slick-center {
+            .slick-slide,
+            .slick-slide[aria-hidden="true"]:not(.slick-cloned)~.slick-cloned[aria-hidden="true"] {
+                opacity: .5;
+                transform: scale(.7);
+                transition: opacity .6s ease-in, transform .6s ease-in;
+            }
+            
+            .slick-center,
+            .slick-slide[aria-hidden="true"]:not([tabindex="-1"])+.slick-cloned[aria-hidden="true"] {
                 opacity: 1;
+                transform: scale(1);
             }
             
             .slider-btn {
