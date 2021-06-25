@@ -653,6 +653,7 @@
          border-radius: 20px;
          object-fit: cover;
          outline: none;
+         cursor: zoom-in;
      }
      &__title {
          font-size: 28px;
@@ -692,12 +693,12 @@
          transition: all .5s;
      }
      &__left {
-         left: 10px;
+         left: 50px;
          top: 100px;
          bottom: 0;
      }
      &__right {
-         right: 10px;
+         right: 50px;
          top: 100px;
          bottom: 0;
      }
@@ -767,7 +768,6 @@
      z-index: 1043;
      position: fixed;
      outline: none !important;
-     -webkit-backface-visibility: hidden;
  }
  
  .mfp-container {
