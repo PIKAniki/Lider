@@ -647,11 +647,12 @@
          margin-bottom: 170px;
      }
      &__img {
-         max-width: 400px;
-         width: 100%;
+         max-width: 100%;
+         width: 400px;
          max-height: 250px;
          border-radius: 20px;
          object-fit: cover;
+         outline: none;
      }
      &__title {
          font-size: 28px;
@@ -688,6 +689,7 @@
      }
      svg {
          stroke: #000;
+         transition: all .5s;
      }
      &__left {
          left: 10px;
@@ -698,6 +700,11 @@
          right: 10px;
          top: 100px;
          bottom: 0;
+     }
+     &.slick-disabled {
+         svg {
+             stroke: rgba(#000, .3);
+         }
      }
  }
  
@@ -713,7 +720,7 @@
  }
  
  .mfp-with-zoom.mfp-ready.mfp-bg {
-     opacity: 0.98;
+     opacity: 0.8;
  }
  
  .mfp-with-zoom.mfp-removing .mfp-container,
