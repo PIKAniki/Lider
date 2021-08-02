@@ -5,6 +5,16 @@
     .advantages__info-text {
         padding: 0 15px;
     }
+    .catalog__item {
+        width: calc((100%/3) - 100px);
+    }
+    .catalog__product-img {
+        width: 100%;
+    }
+    .catalog__product-opacity__info {
+        position: absolute;
+        bottom: 45px;
+    }
 }
 
 @media (max-width:1150px) {
@@ -27,9 +37,34 @@
         &:nth-child(even) {
             margin-right: 0;
         }
-        // &+.services__item {
-        //     margin-right: 200px;
-        // }
+    }
+}
+
+@media(max-width: 1080px) {
+    .catalog__items {
+        justify-content: center;
+        // margin-left: 100px;
+        padding-left: 100px;
+        &::after {
+            content: "";
+            flex: auto;
+        }
+    }
+    .catalog__item {
+        margin: 0 auto;
+        // width: 350px;
+        width: calc(50% - 100px);
+        max-width: 100%;
+        margin-right: 100px;
+        margin-bottom: 50px;
+        // margin-left: 60px;
+        &:nth-child(3n) {
+            margin-right: 100px;
+        }
+        &:nth-last-child(even) {
+            margin-right: 100px;
+        }
+        &:last-of-type {}
     }
 }
 
@@ -99,6 +134,14 @@
     .services__item {
         width: calc(50% - 100px);
         margin-right: 100px;
+    }
+    .catalog__item {
+        min-width: 600px;
+        text-align: center;
+    }
+    .catalog__product-img {
+        width: 100%;
+        min-height: 200px;
     }
     .footer__inner {
         flex-wrap: wrap;
@@ -192,6 +235,9 @@ screen and (max-height: 300px) {
 }
 
 @media(max-width: 650px) {
+    .catalog__item {
+        min-width: 400px;
+    }
     .header__logo-img {
         max-width: 140px;
         height: auto;
@@ -263,6 +309,12 @@ screen and (max-height: 300px) {
 }
 
 @media(max-width: 540px) {
+    .catalog__item {
+        min-width: 400px;
+    }
+    .catalog__product-img {
+        width: 300px;
+    }
     .footer__inner {
         align-content: center;
         margin: 0 auto;
@@ -290,7 +342,19 @@ screen and (max-height: 300px) {
     }
 }
 
+@media(max-width: 460px) {
+    .catalog__item {
+        min-width: 350px;
+    }
+    .catalog__product-img {
+        width: 250px;
+    }
+}
+
 @media(max-width: 420px) {
+    .catalog__item {
+        min-width: 320px;
+    }
     .advantages__info-text {
         font-size: 20px;
     }
@@ -312,6 +376,9 @@ screen and (max-height: 300px) {
 }
 
 @media(max-width: 370px) {
+    .catalog__item {
+        min-width: 290px;
+    }
     .advantages__info-text {
         font-size: 18px;
     }
