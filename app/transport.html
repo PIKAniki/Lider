@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="header__logo" href="index.html" aria-label="index">
+                        <img class="header__logo-img" src="images/logo-big.png" alt="logo">
+                    </a>
+
+                    <nav class="menu">
+                        <ul class="menu__list-items">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="index.html" aria-label="index">Главная</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="transport.html" aria-label="transport">Транспорт</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="about.html" aria-label="about">О нас</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="contacts.html" aria-label="contact">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                    <div class="header__links">
+                        <div class="header__links-item"><a class="header__links-phone phone" href="tel:89677063148">8 (967) 706-31-48</a></div>
+                        <div class="header__links-item"> <a class="header__links-email email" href="mailto:liderpassagir@mail.ru">liderpassagir@mail.ru</a></div>
+
+
+                    </div>
+                    <button class="header__btn" type="button">
+                        <img src="images/icon_menu.svg" alt="icon menu">
+                      </button>
+                    <div class="rightside-menu rightside-menu--close">
+                        <button class="rightside-menu__close" type="button">
+                                <img src="images/close.svg" alt="icon close">
+                              </button>
+                        <div class="rightside-menu__content">
+                            <ul class="rightside-menu__list">
+                                <li class="rightside-menu__item">
+                                    <a class="rightside-menu-link" href="index.html">Главная</a>
+                                </li>
+                                <li class="rightside-menu__item">
+                                    <a class="rightside-menu__link" href="transport.html">Транспорт</a>
+                                </li>
+                                <li class="rightside-menu__item">
+                                    <a class="rightside-menu__link" href="about.html">О нас</a>
+                                </li>
+                                <li class="rightside-menu__item">
+                                    <a class="rightside-menu__link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                            <div class="rightside-menu__links">
+                                <div class="rightside-menu__links-item"><a class="rightside-menu__links-phone phone" href="tel:89677063148">8 (967) 706-31-48</a></div>
+                                <div class="rightside-menu__links-item"> <a class="rightside-menu__links-email email" href="mailto:liderpassagir@mail.ru">liderpassagir@mail.ru</a></div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="catalog">
+                <div class="container">
+                    <header class="section__header">
+                        <h1 class="catalog__title section-title">Наш транспорт</h1>
+                        <nav class="catalog-nav">
+                            <ul class="catalog-nav__wrapper">
+                                <li class="catalog-nav__item">
+                                    <button class="catalog-nav__btn is-active" type="button" data-filter="all">Все</button>
+                                </li>
+                                <li class="catalog-nav__item">
+                                    <button class="catalog-nav__btn" type="button" data-filter="microbus">Микроавтобусы</button>
+                                </li>
+                                <li class="catalog-nav__item">
+                                    <button class="catalog-nav__btn" type="button" data-filter="bus">Автобусы</button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <div class="catalog__items">
+                        <div class="catalog__item" data-category="microbus">
+                            <div class="catalog__product">
+                                <img class="catalog__product-img" src="images/kisspng-mercedes-b-class-mercedes-benz-sprinter-car-winneb-mercedes-5ac0f9ba0a8e14.6090420815225962820432.png" alt="transport image">
+                                <div class="catalog__product-content">
+                                    <h2 class="catalog__product-title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                    <div class="catalog__product-info">
+                                        <p class="catalog__product-info--year">Год выпуска: <span>2017</span></p>
+                                        <p class="catalog__product-info--places">Количество мест: <span>20</span></p>
+                                    </div>
+                                    <div class="catalog__product-button product__button">
+                                        <button class="catalog__product-btn product__btn myBtn" id="myBtn">Подробнее</button>
+                                    </div>
+                                    <div class="catalog__product-opacity">
+                                        <h2 class="catalog__product-opacity__title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                        <div class="catalog__product-adv">
+                                            <div class="catalog__product-adv__item">Кондиционер</div>
+                                            <div class="catalog__product-adv__item">Удобные кресла</div>
+                                            <div class="catalog__product-adv__item">Музыка по вашему желанию</div>
+                                            <div class="catalog__product-adv__item">Подсветка</div>
+                                        </div>
+                                        <div class="catalog__product-opacity__info">
+                                            <p class="catalog__product-opacity--year">Год выпуска: <span>2017</span></p>
+                                            <p class="catalog__product-opacity--places">Количество мест: <span>20</span></p>
+                                        </div>
+                                        <div class="catalog__product-opacity__button product__button">
+                                            <button class="catalog__product-opacity__btn product__btn myBtn" data-modal="myModal1">Подробнее</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-category="bus">
+                            <div class="catalog__product">
+                                <img class="catalog__product-img" src="images/kisspng-mercedes-b-class-mercedes-benz-sprinter-car-winneb-mercedes-5ac0f9ba0a8e14.6090420815225962820432.png" alt="transport image">
+                                <div class="catalog__product-content">
+                                    <h2 class="catalog__product-title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                    <div class="catalog__product-info">
+                                        <p class="catalog__product-info--year">Год выпуска: <span>2017</span></p>
+                                        <p class="catalog__product-info--places">Количество мест: <span>20</span></p>
+                                    </div>
+                                    <div class="catalog__product-button product__button">
+                                        <button class="catalog__product-btn product__btn myBtn" id="myBtn">Подробнее</button>
+                                    </div>
+                                    <div class="catalog__product-opacity">
+                                        <h2 class="catalog__product-opacity__title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                        <div class="catalog__product-adv">
+                                            <div class="catalog__product-adv__item">Кондиционер</div>
+                                            <div class="catalog__product-adv__item">Удобные кресла</div>
+                                            <div class="catalog__product-adv__item">Музыка по вашему желанию</div>
+                                            <div class="catalog__product-adv__item">Подсветка</div>
+                                        </div>
+                                        <div class="catalog__product-opacity__info">
+                                            <p class="catalog__product-opacity--year">Год выпуска: <span>2017</span></p>
+                                            <p class="catalog__product-opacity--places">Количество мест: <span>20</span></p>
+                                        </div>
+                                        <div class="catalog__product-opacity__button product__button">
+                                            <button class="catalog__product-opacity__btn product__btn myBtn" data-modal="myModal2">Подробнее</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-category="bus">
+                            <div class="catalog__product">
+                                <img class="catalog__product-img" src="images/kisspng-mercedes-b-class-mercedes-benz-sprinter-car-winneb-mercedes-5ac0f9ba0a8e14.6090420815225962820432.png" alt="transport image">
+                                <div class="catalog__product-content">
+                                    <h2 class="catalog__product-title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                    <div class="catalog__product-info">
+                                        <p class="catalog__product-info--year">Год выпуска: <span>2017</span></p>
+                                        <p class="catalog__product-info--places">Количество мест: <span>20</span></p>
+                                    </div>
+                                    <div class="catalog__product-button product__button">
+                                        <button class="catalog__product-btn product__btn myBtn" id="myBtn">Подробнее</button>
+                                    </div>
+                                    <div class="catalog__product-opacity">
+                                        <h2 class="catalog__product-opacity__title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                        <div class="catalog__product-adv">
+                                            <div class="catalog__product-adv__item">Кондиционер</div>
+                                            <div class="catalog__product-adv__item">Удобные кресла</div>
+                                            <div class="catalog__product-adv__item">Музыка по вашему желанию</div>
+                                            <div class="catalog__product-adv__item">Подсветка</div>
+                                        </div>
+                                        <div class="catalog__product-opacity__info">
+                                            <p class="catalog__product-opacity--year">Год выпуска: <span>2017</span></p>
+                                            <p class="catalog__product-opacity--places">Количество мест: <span>20</span></p>
+                                        </div>
+                                        <div class="catalog__product-opacity__button product__button">
+                                            <button class="catalog__product-opacity__btn product__btn myBtn" data-modal="myModal3">Подробнее</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-category="microbus">
+                            <div class="catalog__product">
+                                <img class="catalog__product-img" src="images/kisspng-mercedes-b-class-mercedes-benz-sprinter-car-winneb-mercedes-5ac0f9ba0a8e14.6090420815225962820432.png" alt="transport image">
+                                <div class="catalog__product-content">
+                                    <h2 class="catalog__product-title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                    <div class="catalog__product-info">
+                                        <p class="catalog__product-info--year">Год выпуска: <span>2017</span></p>
+                                        <p class="catalog__product-info--places">Количество мест: <span>20</span></p>
+                                    </div>
+                                    <div class="catalog__product-button product__button">
+                                        <button class="catalog__product-btn product__btn myBtn" id="myBtn">Подробнее</button>
+                                    </div>
+                                    <div class="catalog__product-opacity">
+                                        <h2 class="catalog__product-opacity__title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                        <div class="catalog__product-adv">
+                                            <div class="catalog__product-adv__item">Кондиционер</div>
+                                            <div class="catalog__product-adv__item">Удобные кресла</div>
+                                            <div class="catalog__product-adv__item">Музыка по вашему желанию</div>
+                                            <div class="catalog__product-adv__item">Подсветка</div>
+                                        </div>
+                                        <div class="catalog__product-opacity__info">
+                                            <p class="catalog__product-opacity--year">Год выпуска: <span>2017</span></p>
+                                            <p class="catalog__product-opacity--places">Количество мест: <span>20</span></p>
+                                        </div>
+                                        <div class="catalog__product-opacity__button product__button">
+                                            <button class="catalog__product-opacity__btn product__btn myBtn" data-modal="myModal4">Подробнее</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-category="microbus">
+                            <div class="catalog__product">
+                                <img class="catalog__product-img" src="images/kisspng-mercedes-b-class-mercedes-benz-sprinter-car-winneb-mercedes-5ac0f9ba0a8e14.6090420815225962820432.png" alt="transport image">
+                                <div class="catalog__product-content">
+                                    <h2 class="catalog__product-title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                    <div class="catalog__product-info">
+                                        <p class="catalog__product-info--year">Год выпуска: <span>2017</span></p>
+                                        <p class="catalog__product-info--places">Количество мест: <span>20</span></p>
+                                    </div>
+                                    <div class="catalog__product-button product__button">
+                                        <button class="catalog__product-btn product__btn myBtn" id="myBtn">Подробнее</button>
+                                    </div>
+                                    <div class="catalog__product-opacity">
+                                        <h2 class="catalog__product-opacity__title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                        <div class="catalog__product-adv">
+                                            <div class="catalog__product-adv__item">Кондиционер</div>
+                                            <div class="catalog__product-adv__item">Удобные кресла</div>
+                                            <div class="catalog__product-adv__item">Музыка по вашему желанию</div>
+                                            <div class="catalog__product-adv__item">Подсветка</div>
+                                        </div>
+                                        <div class="catalog__product-opacity__info">
+                                            <p class="catalog__product-opacity--year">Год выпуска: <span>2017</span></p>
+                                            <p class="catalog__product-opacity--places">Количество мест: <span>20</span></p>
+                                        </div>
+                                        <div class="catalog__product-opacity__button product__button">
+                                            <button class="catalog__product-opacity__btn product__btn myBtn" data-modal="myModal5">Подробнее</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-category="bus">
+                            <div class="catalog__product">
+                                <img class="catalog__product-img" src="images/kisspng-mercedes-b-class-mercedes-benz-sprinter-car-winneb-mercedes-5ac0f9ba0a8e14.6090420815225962820432.png" alt="transport image">
+                                <div class="catalog__product-content">
+                                    <h2 class="catalog__product-title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                    <div class="catalog__product-info">
+                                        <p class="catalog__product-info--year">Год выпуска: <span>2017</span></p>
+                                        <p class="catalog__product-info--places">Количество мест: <span>20</span></p>
+                                    </div>
+                                    <div class="catalog__product-button product__button">
+                                        <button class="catalog__product-btn product__btn myBtn" id="myBtn">Подробнее</button>
+                                    </div>
+                                    <div class="catalog__product-opacity">
+                                        <h2 class="catalog__product-opacity__title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                        <div class="catalog__product-adv">
+                                            <div class="catalog__product-adv__item">Кондиционер</div>
+                                            <div class="catalog__product-adv__item">Удобные кресла</div>
+                                            <div class="catalog__product-adv__item">Музыка по вашему желанию</div>
+                                            <div class="catalog__product-adv__item">Подсветка</div>
+                                        </div>
+                                        <div class="catalog__product-opacity__info">
+                                            <p class="catalog__product-opacity--year">Год выпуска: <span>2017</span></p>
+                                            <p class="catalog__product-opacity--places">Количество мест: <span>20</span></p>
+                                        </div>
+                                        <div class="catalog__product-opacity__button product__button">
+                                            <button class="catalog__product-opacity__btn product__btn myBtn" data-modal="myModal6">Подробнее</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-category="microbus">
+                            <div class="catalog__product">
+                                <img class="catalog__product-img" src="images/kisspng-mercedes-b-class-mercedes-benz-sprinter-car-winneb-mercedes-5ac0f9ba0a8e14.6090420815225962820432.png" alt="transport image">
+                                <div class="catalog__product-content">
+                                    <h2 class="catalog__product-title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                    <div class="catalog__product-info">
+                                        <p class="catalog__product-info--year">Год выпуска: <span>2017</span></p>
+                                        <p class="catalog__product-info--places">Количество мест: <span>20</span></p>
+                                    </div>
+                                    <div class="catalog__product-button product__button">
+                                        <button class="catalog__product-btn product__btn myBtn" id="myBtn">Подробнее</button>
+                                    </div>
+                                    <div class="catalog__product-opacity">
+                                        <h2 class="catalog__product-opacity__title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                        <div class="catalog__product-adv">
+                                            <div class="catalog__product-adv__item">Кондиционер</div>
+                                            <div class="catalog__product-adv__item">Удобные кресла</div>
+                                            <div class="catalog__product-adv__item">Музыка по вашему желанию</div>
+                                            <div class="catalog__product-adv__item">Подсветка</div>
+                                        </div>
+                                        <div class="catalog__product-opacity__info">
+                                            <p class="catalog__product-opacity--year">Год выпуска: <span>2017</span></p>
+                                            <p class="catalog__product-opacity--places">Количество мест: <span>20</span></p>
+                                        </div>
+                                        <div class="catalog__product-opacity__button product__button">
+                                            <button class="catalog__product-opacity__btn product__btn myBtn" data-modal="myModal7">Подробнее</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-category="microbus">
+                            <div class="catalog__product">
+                                <img class="catalog__product-img" src="images/kisspng-mercedes-b-class-mercedes-benz-sprinter-car-winneb-mercedes-5ac0f9ba0a8e14.6090420815225962820432.png" alt="transport image">
+                                <div class="catalog__product-content">
+                                    <h2 class="catalog__product-title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                    <div class="catalog__product-info">
+                                        <p class="catalog__product-info--year">Год выпуска: <span>2017</span></p>
+                                        <p class="catalog__product-info--places">Количество мест: <span>20</span></p>
+                                    </div>
+                                    <div class="catalog__product-button product__button">
+                                        <button class="catalog__product-btn product__btn myBtn" id="myBtn">Подробнее</button>
+                                    </div>
+                                    <div class="catalog__product-opacity">
+                                        <h2 class="catalog__product-opacity__title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                        <div class="catalog__product-adv">
+                                            <div class="catalog__product-adv__item">Кондиционер</div>
+                                            <div class="catalog__product-adv__item">Удобные кресла</div>
+                                            <div class="catalog__product-adv__item">Музыка по вашему желанию</div>
+                                            <div class="catalog__product-adv__item">Подсветка</div>
+                                        </div>
+                                        <div class="catalog__product-opacity__info">
+                                            <p class="catalog__product-opacity--year">Год выпуска: <span>2017</span></p>
+                                            <p class="catalog__product-opacity--places">Количество мест: <span>20</span></p>
+                                        </div>
+                                        <div class="catalog__product-opacity__button product__button">
+                                            <button class="catalog__product-opacity__btn product__btn myBtn" data-modal="myModal8">Подробнее</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div id="myModal1" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close" data-modal="myModal1">&times;</span>
+
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-body__images modal-slider modal-body__images-1">
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider2.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider2.jpg" class="modal-body__images-link"><img class=" modal-body__img" src="images/modal-slider2.jpg" alt=""></a>
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <div class="modal-body__content">
+                                    <h2 class="modal-body__title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="myModal2" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close" data-modal="myModal2">&times;</span>
+
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-body__images modal-slider modal-body__images-2">
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider2.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider2.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider2.jpg" alt=""></a>
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <div class="modal-body__content">
+                                    <h2 class="modal-body__title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="myModal3" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close" data-modal="myModal3">&times;</span>
+
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-body__images modal-slider">
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider2.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider2.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider2.jpg" alt=""></a>
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <div class="modal-body__content">
+                                    <h2 class="modal-body__title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="myModal4" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close" data-modal="myModal4">&times;</span>
+
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-body__images modal-slider">
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider2.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider2.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider2.jpg" alt=""></a>
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <div class="modal-body__content">
+                                    <h2 class="modal-body__title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="myModal5" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close" data-modal="myModal5">&times;</span>
+
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-body__images modal-slider">
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider2.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider2.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider2.jpg" alt=""></a>
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="modal-body__content">
+                                    <h2 class="modal-body__title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="myModal6" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close" data-modal="myModal6">&times;</span>
+
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-body__images modal-slider">
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider2.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider2.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider2.jpg" alt=""></a>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="modal-body__content">
+                                    <h2 class="modal-body__title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="myModal7" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close" data-modal="myModal7">&times;</span>
+
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-body__images modal-slider">
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider2.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider1.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="modal-body__item modal-slider__item">
+                                        <a href="images/modal-slider2.jpg" class="modal-body__images-link"><img class="modal-body__img" src="images/modal-slider2.jpg" alt=""></a>
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="modal-body__content">
+                                    <h2 class="modal-body__title">Микроавтобус Mercedes-benz 20 мест</h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="myModal8" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close" data-modal="myModal8">&times;</span>
+
+                            </div>
+                            <div class="modal-body">
+                                text2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__item">
+                        <div class="footer__logo">
+                            <img src="images/logo-big.png" alt="footer logo" class="footer__logo-img">
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__garant">
+                            <div class="footer__garant-image">
+                                <img class="footer__garant-img" src="images/approved.svg" alt="approved icon">
+                            </div>
+                            <div class="footer__garant-info">
+                                <p class="footer__garant-text">Гарантия <br> лучшей цены</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__social">
+                            <a class="footer__social-link footer__social-link--instagram" href="#">lider_passagir
+                    </a>
+                            <a class="footer__social-link footer__social-link--whatsapp" href="#">liderpassagir
+                    </a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__links">
+                            <a class="footer__link-phone phone" href="tel:89677063148">8 (967) 706-31-48</a>
+                            <a class="footer__link-email email" href="mailto:liderpassagir@mail.ru">liderpassagir@mail.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/magnific-popup.js"></script>
+</body>
+
+</html>
